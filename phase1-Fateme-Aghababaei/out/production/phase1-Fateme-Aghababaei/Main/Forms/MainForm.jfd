@@ -1,0 +1,110 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:27:p, comp scrollPane1:::p:1353:p, space ::56:x, par l {par l:::p {comp btnTop10::l::90:x, comp btnVote::l::90:x, comp btnLogin::l::90:x, comp lblUser::l::90:x}, comp btnSignUp:::p:90:p}, space :p:22:p}, seq l {space :p:686:p, comp lblIMDb:::p:91:p, space ::771:x}}"
+			"$verticalGroup": "par l {seq t {par t {seq {space :p:75:p, comp lblUser:::p:37:p, space ::312:x, comp btnSignUp:::p:40:p, space :p:56:p, comp btnLogin:::p:40:p, space :p:62:p, comp btnVote:::p:40:p, space :p:54:p, comp btnTop10:::p:40:p}, seq t {space :p:17:p, comp lblIMDb:::p::p, space u:::p, comp scrollPane1::::695:x}}, space :p:22:p}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"title": "IMDb"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "E:\\Uni\\Data Structures\\Projects\\Phase 1\\phase1-Fateme-Aghababaei\\IMDbIcon.jpg" )
+			"font": new java.awt.Font( "Andalus", 1, 14 )
+			"resizable": false
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tbl"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "ID" )
+						add( "Ordering" )
+						add( "Title" )
+						add( "Region" )
+						add( "Language" )
+						add( "Types" )
+						add( "Attributes" )
+						add( "Is Original Title" )
+						add( "Rating" )
+						add( "Num Votes" )
+					}, new java.util.Vector {
+						add( class java.lang.String )
+						add( class java.lang.Integer )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.Boolean )
+						add( class java.lang.Double )
+						add( class java.lang.Integer )
+					}, new java.util.Vector {
+						add( false )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 55, 55, 55, true ) )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 400, 400, 400, true ) )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 55, 55, 55, true ) )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 60, 60, 60, true ) )
+						add( null )
+						add( null )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 60, 60, 60, true ) )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 55, 55, 55, true ) )
+						add( null )
+					} )
+					"font": new java.awt.Font( "Tahoma", 1, 14 )
+					"rowHeight": 50
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblIMDb"
+				"text": "IMDb"
+				"foreground": sfield java.awt.Color orange
+				"font": new java.awt.Font( "Tw Cen MT Condensed Extra Bold", 1, 30 )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnTop10"
+				"text": "Top 10"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnTop10ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnVote"
+				"text": "Vote"
+				"enabled": false
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnVoteActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnLogin"
+				"text": "Login"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnLoginActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblUser"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSignUp"
+				"text": "Sign Up"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSignUpActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 1550, 810 )
+		} )
+	}
+}

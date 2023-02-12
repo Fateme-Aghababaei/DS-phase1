@@ -1,0 +1,73 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:360:p, comp lblIMDb:::p:104:p, space :0:364:x}, seq t {space ::50:x, par l {seq t {comp btnBack:::p:90:p, space :p:361:p}, seq t {comp scrollPane1:::p:742:p, space :p:36:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:18:p, comp lblIMDb:::p::p, space s:::p, comp scrollPane1:::p:525:p, space u:::p, comp btnBack:::p:40:p, space :p:21:p}}"
+		} ) {
+			name: "this"
+			"title": "Top 10"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "E:\\Uni\\Data Structures\\Projects\\Phase 1\\phase1-Fateme-Aghababaei\\IMDbIcon.jpg" )
+			"resizable": false
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblIMDb"
+				"text": "Top 10"
+				"foreground": sfield java.awt.Color orange
+				"font": new java.awt.Font( "Tw Cen MT Condensed Extra Bold", 1, 30 )
+				"horizontalAlignment": 0
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tbl"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( " Rank" )
+						add( "ID" )
+						add( "Title" )
+						add( "Rating" )
+						add( "Num Votes" )
+					}, new java.util.Vector {
+						add( class java.lang.Integer )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.Double )
+						add( class java.lang.Integer )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( new com.jformdesigner.model.SwingTableColumn( null, 50, 50, 50, true ) )
+						add( null )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 350, 350, 350, true ) )
+						add( null )
+						add( null )
+					} )
+					"font": new java.awt.Font( "Tahoma", 1, 14 )
+					"rowHeight": 50
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnBack"
+				"text": "Back"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnBackActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 15 )
+			"size": new java.awt.Dimension( 830, 700 )
+		} )
+	}
+}

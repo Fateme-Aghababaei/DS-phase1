@@ -1,0 +1,56 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:38:p, par l {comp lblUsername::l:p::p, comp lblPassword::l:p::p}, space :p:63:p, par l {comp textFieldPassword:::p:140:p, comp textFieldUsername:::p:140:p}}, seq l {space :p:131:p, comp lblIMDb:::p:77:p}, seq l {space :p:82:p, comp btnCancel:::p:90:p, space s:::p, comp btnLogin:::p:90:p}}, space ::24:x}}"
+			"$verticalGroup": "par l {seq l {space :p:16:p, comp lblIMDb:::p::p, space s:::p, par b {comp lblUsername::b:p::p, comp textFieldUsername::b:p:27:p}, space :p:26:p, par b {comp lblPassword::b:p::p, comp textFieldPassword::b:p:27:p}, space s:::p, par b {comp btnCancel::b:p:40:p, comp btnLogin::b:p:40:p}, space ::27:x}}"
+		} ) {
+			name: "this"
+			"title": "Login"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "E:\\Uni\\Data Structures\\Projects\\Phase 1\\phase1-Fateme-Aghababaei\\IMDbIcon.jpg" )
+			"resizable": false
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblUsername"
+				"text": "Username :"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblPassword"
+				"text": "Password :"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldUsername"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldPassword"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnCancel"
+				"text": "Cancel"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnCancelActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnLogin"
+				"text": "Login"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnLoginActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblIMDb"
+				"text": "Login"
+				"foreground": sfield java.awt.Color orange
+				"font": new java.awt.Font( "Tw Cen MT Condensed Extra Bold", 1, 30 )
+				"horizontalAlignment": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 0 )
+			"size": new java.awt.Dimension( 345, 265 )
+		} )
+	}
+}
